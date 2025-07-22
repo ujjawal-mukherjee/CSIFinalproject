@@ -1,0 +1,147 @@
+/* ReceiptPage.css */
+
+.receipt-page {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.receipt-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.receipt-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.receipt-check-icon {
+  background: #dcfce7;
+  color: #16a34a;
+  border-radius: 9999px;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.check-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.receipt-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.receipt-subtitle {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.receipt-details {
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.details-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.details-item {
+  display: flex;
+  justify-content: space-between;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.details-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #9333ea;
+}
+
+.receipt-seats {
+  background: #f5f3ff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.receipt-seats h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.seats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.seat-tag {
+  background: #ede9fe;
+  color: #6b21a8;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.receipt-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-back, .btn-print {
+  flex: 1;
+  padding: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-back {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.btn-back:hover {
+  background: #d1d5db;
+}
+
+.btn-print {
+  background: linear-gradient(to right, #9333ea, #2563eb);
+  color: white;
+}
+
+.btn-print:hover {
+  background: linear-gradient(to right, #7e22ce, #1d4ed8);
+}

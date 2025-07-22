@@ -1,0 +1,231 @@
+.genre-row {
+    margin-bottom: 2rem;
+}
+
+.genre-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Enforce 3 cards per row */
+    gap: 2rem;
+    /* Space between cards */
+    padding: 0 1rem;
+    max-width: 1200px;
+    /* Constrain grid width */
+    margin: 0 auto;
+    /* Center the grid */
+}
+
+.movie-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 100%;
+    /* Ensure card takes full available width */
+    max-width: 350px;
+    /* Wider card, as requested */
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-image-wrapper {
+    position: relative;
+    height: 250px;
+    /* Decreased height from 400px to 250px */
+    overflow: hidden;
+}
+
+.movie-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-genre-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.genre-title {
+    text-align: center;
+}
+
+.genre-romance {
+    background-color: #ff6b9d;
+}
+
+.genre-thriller {
+    background-color: #2c3e50;
+}
+
+.genre-scifi {
+    background-color: #3498db;
+}
+
+.genre-comedy {
+    background-color: #f39c12;
+}
+
+.genre-action {
+    background-color: #e74c3c;
+}
+
+.genre-default {
+    background-color: #7f8c8d;
+}
+
+.movie-rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.star-icon,
+.clock-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.25rem;
+}
+
+.movie-details {
+    padding: 1rem;
+    /* Reduced padding from 1.5rem to match lower height */
+}
+
+.movie-title {
+    font-size: 1.25rem;
+    /* Reduced from 1.5rem for proportionality */
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+}
+
+.movie-description {
+    font-size: 0.875rem;
+    /* Kept as is, adjust if needed */
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.details-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    /* Reduced from 0.75rem 1.5rem */
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.details-button:hover {
+    background-color: #2980b9;
+}
+
+/* New Header Styles */
+.homepage-header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    /* Gradient background */
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+    background-image: url('https://via.placeholder.com/1200x300/1e3c72/ffffff?text=Cinema+Background');
+    /* Placeholder background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Overlay for readability */
+    z-index: 1;
+}
+
+.homepage-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.homepage-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.header-cta {
+    position: relative;
+    z-index: 2;
+}
+
+.explore-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
