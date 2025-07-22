@@ -32,6 +32,7 @@ Register Page
 ![cin2](https://github.com/user-attachments/assets/984de6c7-e845-4de4-9d7e-454d15672f25)
 
 Home Page
+
 ![cin3](https://github.com/user-attachments/assets/a07a0232-92c1-44b6-a884-8b7f65d6db3c)
 
 Movie Details and Showtime Selection
